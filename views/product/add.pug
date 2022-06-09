@@ -1,0 +1,15 @@
+extends ../layout
+
+block content 
+    form(action="/product/add",method="post")
+        .form-group
+            label(for="name") Product Name
+            input#name(type="text", class="form-control" , placeholder="Enter product Name", name="Name")
+        .form-group
+            label(for="name") Product Price
+            input#price(type="text", class="form-control",placeholder="Enter product price", name="Price")
+        
+        .form-group
+            label(for="name") Product Model
+            input#price(type="text", class="form-control",placeholder="Enter product price", name="Model")
+        input(type="submit", class="btn btn-info")

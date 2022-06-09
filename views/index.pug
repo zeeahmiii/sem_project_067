@@ -1,0 +1,56 @@
+extends layout
+
+block content
+ #carouselExampleControls.carousel.slide(data-ride='carousel')
+  .carousel-inner
+    .carousel-item.active
+      img.d-block.w-100(src='../images/civic1.jpeg' alt='First slide')
+    .carousel-item
+      img.d-block.w-100(src='../images/civic2.jpeg' alt='Second slide')
+    .carousel-item
+      img.d-block.w-100(src='../images/civic.jpg' alt='Third slide')
+  a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+    span.carousel-control-prev-icon(aria-hidden='true')
+    span.sr-only Previous
+  a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+    span.carousel-control-next-icon(aria-hidden='true')
+    span.sr-only Next
+
+ 
+  footer(style='background-color: #eee6d3;')
+    .container.p-4
+      .row
+        .col-lg-6.col-md-12.mb-4
+          h5.mb-3.text-dark Contact
+          p
+            | Mobile Number:       03174867002
+          p 
+            |Email: hafizahmad7383@gmail.com
+            
+        .col-lg-3.col-md-6.mb-4
+          h5.mb-3.text-dark links
+          ul.list-unstyled.mb-0
+            li.mb-1
+              a(href='#!' style='color: #4f4f4f;') FAQ
+            li.mb-1
+              a(href='#!' style='color: #4f4f4f;') Classes
+            li.mb-1
+              a(href='#!' style='color: #4f4f4f;') Pricing
+            li
+              a(href='#!' style='color: #4f4f4f;') Safety
+        .col-lg-3.col-md-6.mb-4
+          h5.mb-1.text-dark opening hours
+          table.table(style='border-color: #666;')
+            tbody
+              tr
+                td Mon - Fri:
+                td 8am - 9pm
+              tr
+                td Sat - Sun:
+                td 8am - 1am
+    .text-center.p-3(style='background-color: rgba(0, 0, 0, 0.2);')
+      | &copy; 2022 Copyright:
+      a.text-dark(href='https://api-crud-067.herokuapp.com/') Car Prodcut
+    
+
+

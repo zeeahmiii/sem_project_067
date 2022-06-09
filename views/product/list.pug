@@ -1,0 +1,44 @@
+extends ../layout
+
+block content
+ .row 
+        .col-sm-8 
+            h1=title 
+
+        .col-sm-4 
+            a(href="/product/add", class="btn btn-success float-right") Add new product  
+ .row.row-cols-1.row-cols-md-2.g-4
+  each Product in product
+   .col
+    .card
+      img.card-img-top(src='../images/civic.jpg' alt='...')
+      
+      .card-body
+       
+        table.table
+         thead 
+            tr 
+                th Name
+                th Price
+                th Model
+                th Action 
+                th Action
+         tbody 
+             
+                tr 
+                    td=Product.Name
+                    td=Product.Price
+                    td=Product.Model
+                    td 
+                      a(href="/product/delete/"+Product._id, class="btn btn-danger") Delete
+                    td
+                      a(href="/product/edit/"+Product._id, class="btn btn-warning") Edit
+      .card-footer
+          
+        a(href="/product/cart/"+Product._id, class="btn btn-info float-right") Add to Cart
+  
+  
+  
+
+  
+  
